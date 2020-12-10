@@ -1,0 +1,16 @@
+title: prog-8.github.io
+description: Test operasion
+template:
+  repo: prog-8.github.io-template
+  name: prog-8.github.io
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
